@@ -1,0 +1,99 @@
+/* General Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	font-family: 'Crimson Pro', serif; /* Now using Crimson Pro */
+	color: black; /* Setting primary font color to crimson */
+}
+
+/* Navigation Bar */
+.navbar {
+	background-color: #00a4cc;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5em 2em;
+}
+
+.nav-logo {
+	font-size: 1.5em;
+	color: white; /* Logo color remains white for contrast */
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+}
+
+.nav-links li {
+	margin-left: 20px;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: white; /* Navigation links color remains white */
+	transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+	color: crimson; /* Hover and active state color for links */
+}
+
+.social-media a {
+	margin-left: 20px;
+}
+
+/* Main Content Styles */
+.intro,
+.project-gallery,
+.about-me,
+.contact-info {
+	padding: 2em;
+	background-color: #efefef;
+	text-align: center;
+}
+
+.intro h2,
+.project-gallery h2,
+.about-me h2,
+.contact-info h2 {
+	margin-bottom: 1em; /* Increased padding between h2 and paragraphs */
+}
+
+.featured-projects .projects-grid,
+.project-gallery .projects-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 1em;
+	padding: 2em;
+}
+
+.project-card {
+	background-color: white;
+	padding: 1em;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+	width: 100%;
+	height: auto;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+	padding: 1em;
+	background-color: #ccc;
+	color: #333;
+}
+
+footer span {
+	color: crimson;
+}
